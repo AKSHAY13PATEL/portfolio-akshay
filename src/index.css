@@ -35,3 +35,11 @@ body {
     background-color: #f9f9f9;
   }
 }
+
+.card-wrapper {
+  @apply h-auto w-full rounded-xl border-2 border-solid border-darkgray bg-background-default px-10 py-14;
+}
+
+.card-wrapper-footer {
+  @apply px-4 py-5;
+}
