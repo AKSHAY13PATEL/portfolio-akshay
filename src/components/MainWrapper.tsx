@@ -1,7 +1,11 @@
+import HeroSection from "./HeroSection";
+
 const MainWrapper = () => {
   return (
     <div className="grid grid-cols-4 gap-4">
-      <div className="card-wrapper col-span-full">Hero section</div>
+      <div className="card-wrapper col-span-full">
+        <HeroSection />
+      </div>
       <div className="card-wrapper col-span-2 row-start-2 row-end-4">
         Recent works
       </div>

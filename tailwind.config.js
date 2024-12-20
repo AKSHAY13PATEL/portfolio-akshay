@@ -6,6 +6,7 @@ export default {
       colors: {
         background: {
           default: "#1B1B1B", // Pure black background
+          lightblack: "#161616",
           // section: "#1B1B1B", // Section background
         },
         primary: "#FFFFFF", // Primary text color
