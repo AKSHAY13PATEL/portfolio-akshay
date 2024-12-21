@@ -1,5 +1,6 @@
 import HeroSection from "./HeroSection";
 import RecentWorks from "./RecentWorks";
+import SkillSection from "./SkillSection";
 
 const MainWrapper = () => {
   return (
@@ -10,8 +11,8 @@ const MainWrapper = () => {
       <div className="card-wrapper col-span-2 row-start-2 row-end-4">
         <RecentWorks />
       </div>
-      <div className="card-wrapper col-span-2 row-start-2 row-end-4">
-        Skill Highlight section
+      <div className="col-span-2 row-start-2 row-end-4">
+        <SkillSection />
       </div>
       <div className="card-wrapper col-span-full">Projects</div>
       <div className="card-wrapper col-span-full">Experience</div>

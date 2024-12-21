@@ -43,3 +43,7 @@ body {
 .card-wrapper-footer {
   @apply px-4 py-5;
 }
+
+.card-wrapper-skill {
+  @apply text-2xl font-medium text-secondary;
+}
