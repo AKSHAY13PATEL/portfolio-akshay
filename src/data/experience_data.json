@@ -1,0 +1,34 @@
+[
+  {
+    "company_name": "Lucent Innovation",
+    "role": "Frontend Developer",
+    "project_name": "My Easy Monogram (MEM)",
+    "description": "As a contributor to MyEasyMonogram, I developed the frontend of the Design Studio, enabling users to create custom products with live previews and automatic production file generation. This feature streamlines the design process, allowing customers to personalize items seamlessly.",
+    "short_description": "Frontend Design Studio for custom product creation with live previews and production file generation.",
+    "duration": "Oct 2024 - Present"
+  },
+  {
+    "company_name": "Lucent Innovation",
+    "role": "Frontend Developer",
+    "project_name": "My Easy Manufacturing (MFG)",
+    "description": "As a contributor to MyEasyMFG, I was instrumental in developing a comprehensive platform that streamlines manufacturing processes for businesses. Our solution offers tools for production planning, inventory management, and order tracking, enabling manufacturers to enhance efficiency and productivity.",
+    "short_description": "Comprehensive platform for streamlining manufacturing with planning, inventory, and tracking tools.",
+    "duration": "Jul 2024 - Oct 2024"
+  },
+  {
+    "company_name": "Truts",
+    "role": "Frontend Developer",
+    "project_name": "Wenlucky",
+    "description": "As a contributor to WenLucky.com, I was instrumental in developing a decentralized micro-gaming platform that enables users to participate in various lotteries using memecoins and other speculative tokens.",
+    "short_description": "Decentralized micro-gaming platform for lotteries using memecoins and tokens.",
+    "duration": " Aug 2023 - Jul 2024"
+  },
+  {
+    "company_name": "Truts",
+    "role": "Backend Developer",
+    "project_name": "Truts Website",
+    "description": "Truts.xyz is a platform that enables users to discover and engage with various Web3 communities. It offers missions for users to contribute to their favorite communities and earn rewards, fostering active participation in the decentralized ecosystem.",
+    "short_description": "A platform for discovering and engaging with Web3 communities, offering missions and rewards for participation.",
+    "duration": "Feb 2023 - Aug 2023"
+  }
+]

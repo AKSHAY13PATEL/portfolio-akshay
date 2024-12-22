@@ -1,3 +1,4 @@
+import ExperienceSection from "./ExperienceSection";
 import HeroSection from "./HeroSection";
 import ProjectSection from "./ProjectSection";
 import RecentWorks from "./RecentWorks";
@@ -18,7 +19,9 @@ const MainWrapper = () => {
       <div className="card-wrapper col-span-full">
         <ProjectSection />
       </div>
-      <div className="card-wrapper col-span-full">Experience</div>
+      <div className="card-wrapper col-span-full">
+        <ExperienceSection />
+      </div>
     </div>
   );
 };
