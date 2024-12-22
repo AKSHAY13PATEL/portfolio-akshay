@@ -7,7 +7,7 @@ import SkillSection from "./SkillSection";
 const MainWrapper = () => {
   return (
     <div className="grid grid-cols-4 gap-4">
-      <div className="card-wrapper col-span-full">
+      <div className="card-wrapper animated-border col-span-full">
         <HeroSection />
       </div>
       <div className="card-wrapper col-span-2 row-start-2 row-end-4">
