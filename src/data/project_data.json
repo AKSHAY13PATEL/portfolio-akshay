@@ -1,7 +1,7 @@
 [
   {
     "name": "Rawg Clone",
-    "description": "Rawg Clone Project: Created as a front-end learning exercise, this clone mirrors the popular gaming information site RAWG. Built with React, TypeScript, Prisma, and MongoDB, it fetches game data from the RAWG API—the ultimate video game database. Explore games, discover details, and much more!",
+    "description": "Created as a front-end learning exercise, this clone mirrors the popular gaming information site RAWG. Built with React, TypeScript, Prisma, and MongoDB, it fetches game data from the RAWG API—the ultimate video game database. Explore games, discover details, and much more!",
     "image": "/rawg_clone_1.png"
   },
   {
