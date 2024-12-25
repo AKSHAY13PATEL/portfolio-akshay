@@ -1,7 +1,6 @@
 import ExperienceSection from "./ExperienceSection";
 import HeroSection from "./HeroSection";
 import ProjectSection from "./ProjectSection";
-import RecentWorks from "./RecentWorks";
 import SkillSection from "./SkillSection";
 
 const MainWrapper = () => {
@@ -10,17 +9,14 @@ const MainWrapper = () => {
       <div className="card-wrapper animated-border col-span-full">
         <HeroSection />
       </div>
-      <div className="card-wrapper col-span-2 row-start-2 row-end-4">
-        <RecentWorks />
-      </div>
-      <div className="col-span-2 row-start-2 row-end-4">
-        <SkillSection />
-      </div>
       <div className="card-wrapper col-span-full">
         <ProjectSection />
       </div>
       <div className="card-wrapper col-span-full">
         <ExperienceSection />
+      </div>
+      <div className="col-span-full">
+        <SkillSection />
       </div>
     </div>
   );
