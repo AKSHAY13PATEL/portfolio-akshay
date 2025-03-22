@@ -1,4 +1,9 @@
+import { useState } from "react";
+import Notification from "./Notification";
+
 const HeroSection = () => {
+  const [showNotification, setShowNotification] = useState(false);
+
   return (
     <div className="flex flex-col gap-16">
       <div className="flex justify-between">
@@ -43,7 +48,13 @@ const HeroSection = () => {
                 />
               </svg>
             </button>
-            <button className="mr-4 flex items-center justify-center gap-1 rounded-md bg-background-lightblack px-3 py-2 text-secondary">
+            <button
+              onClick={() => {
+                navigator.clipboard.writeText("akshaypatel.ap1320@gmail.com");
+                setShowNotification(true);
+              }}
+              className="mr-4 flex items-center justify-center gap-1 rounded-md bg-background-lightblack px-3 py-2 text-secondary"
+            >
               Copy email{" "}
               <svg
                 width="18"
@@ -68,6 +79,13 @@ const HeroSection = () => {
           />
         </div>
       </div>
+
+      {showNotification && (
+        <Notification
+          text="Email copied to clipboard"
+          onClose={() => setShowNotification(false)}
+        />
+      )}
     </div>
   );
 };
