@@ -10,9 +10,9 @@ const SkillSection = () => {
 
   return (
     <div className="flex gap-4 text-center">
-      {skills.map((skill) => {
+      {skills.map((skill, index) => {
         return (
-          <div className="card-flip">
+          <div className="card-flip" key={index}>
             <div className="card-flip-inner">
               <div className="card-front card-wrapper-skill">{skill.front}</div>
               <div className="card-back card-wrapper-skill">{skill.back}</div>

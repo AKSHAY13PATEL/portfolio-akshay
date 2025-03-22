@@ -1,7 +1,9 @@
 import { useState } from "react";
 import Notification from "./Notification";
+import { useNavigate } from "react-router-dom";
 
 const HeroSection = () => {
+  const navigate = useNavigate();
   const [showNotification, setShowNotification] = useState(false);
 
   return (
@@ -33,7 +35,10 @@ const HeroSection = () => {
             </span>
           </div>
           <div className="flex gap-2">
-            <button className="mr-4 flex items-center justify-center gap-1 rounded-md bg-[#E63E21] px-3 py-2">
+            <button
+              onClick={() => navigate("/contact")}
+              className="mr-4 flex items-center justify-center gap-1 rounded-md bg-[#E63E21] px-3 py-2"
+            >
               Hire Me{" "}
               <svg
                 width="14"
