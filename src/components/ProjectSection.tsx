@@ -4,15 +4,6 @@ const ProjectSection = () => {
   return (
     <div className="flex flex-col gap-16">
       <div className="flex items-center justify-start gap-2">
-        <svg
-          width="10"
-          height="10"
-          viewBox="0 0 10 10"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <circle cx="5" cy="4.51221" r="4.5" fill="#C0C0C0" />
-        </svg>
         <span className="text-2xl text-secondary">Projects</span>
       </div>
       <div className="flex flex-col gap-10">

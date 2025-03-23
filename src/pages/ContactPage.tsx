@@ -115,7 +115,7 @@ const ContactPage = () => {
               LinkedIn <TiSocialLinkedinCircular className="size-6" />
             </a>
             <a
-              href="mailto:yourname@example.com"
+              href="mailto:akshaypatel.ap1320@gmail.com"
               className="flex items-center gap-1 hover:text-highlight"
             >
               Email <MdMail className="size-6" />
