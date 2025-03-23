@@ -65,15 +65,15 @@ body {
 .animated-border::before {
   content: "";
   position: absolute;
-  top: -3px;
-  left: -3px;
-  right: -3px;
-  bottom: -3px;
+  top: -2.5px;
+  left: -2.5px;
+  right: -2.5px;
+  bottom: -2.5px;
   border-radius: inherit;
   z-index: -1;
-  background: linear-gradient(90deg, #ff3300, #262626, #ff3300, #262626);
+  background: linear-gradient(90deg, #801a00, #262626, #801a00, #262626);
   background-size: 300% 300%;
-  animation: borderAnimation 3s linear infinite;
+  animation: borderAnimation 5s linear infinite;
 }
 
 .card-flip {
