@@ -28,12 +28,19 @@ const ContactPage = () => {
     e.preventDefault();
     try {
       setIsSubmitting(true);
-      // Send form data to the backend
-      await new Promise((resolve) => setTimeout(resolve, 2000));
 
-      console.log("Form Data", formData);
+      const response = await fetch("http://127.0.0.1:3000/api/send-discord", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const result = await response.json();
+
       setShowNotification(true);
-      setNotificationText("Message Sent Successfully!");
+      setNotificationText(result?.message || "Message Sent Successfully!");
     } catch (error) {
       console.error("Error Submitting Form", error);
       setShowNotification(true);
