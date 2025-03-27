@@ -1,17 +1,38 @@
 [
   {
+    "name": "Next Docs",
+    "description": "Built a high-performance, real-time collaborative editor using TipTap and Liveblocks, facilitating seamless multi-user document editing.",
+    "image": [
+      "/next-docs/next_docs_1.png",
+      "/next-docs/next_docs_2.png",
+      "/next-docs/next_docs_3.png",
+      "/next-docs/next_docs_4.png",
+      "/next-docs/next_docs_5.png",
+      "/next-docs/next_docs_6.png",
+      "/next-docs/next_docs_7.png",
+      "/next-docs/next_docs_8.png",
+      "/next-docs/next_docs_9.png"
+    ]
+  },
+  {
     "name": "Rawg Clone",
     "description": "Created as a front-end learning exercise, this clone mirrors the popular gaming information site RAWG. Built with React, TypeScript, Prisma, and MongoDB, it fetches game data from the RAWG API—the ultimate video game database. Explore games, discover details, and much more!",
-    "image": "/rawg_clone_1.png"
+    "image": ["/raw-game/rawg_clone_1.png", "/raw-game/rawg_clone_2.png"]
   },
   {
     "name": "Issue Tracker Application",
     "description": "Developed using Next.js, Prisma, and NextAuth, this platform streamlines issue management. Assign tasks to users, analyze issue status, and collaborate seamlessly. MongoDB ensures robust data storage.",
-    "image": "/issue_tracker_app_1.png"
+    "image": [
+      "/issue-tracker-app/issue_tracker_app_1.png",
+      "/issue-tracker-app/issue_tracker_app_2.png"
+    ]
   },
   {
     "name": "Cloudify Data",
     "description": "Cloudify Data is a responsive website built as a hands-on project to practice HTML, CSS, and responsive design techniques. The focus was on crafting layouts, ensuring mobile-friendly designs, and applying modern styling practices. A great example of learning through practical implementation!",
-    "image": "/cloudify_data_1.png"
+    "image": [
+      "/cloudify-data/cloudify_data_1.png",
+      "/cloudify-data/cloudify_data_2.png"
+    ]
   }
 ]
