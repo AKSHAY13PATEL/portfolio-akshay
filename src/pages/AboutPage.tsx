@@ -5,10 +5,10 @@ import Navbar from "../components/Navbar";
 
 const AboutPage = () => {
   return (
-    <div className="mx-auto flex max-w-[1215px] flex-col gap-5 px-4">
+    <div className="relative mx-auto flex flex-col gap-10 px-0">
       <Navbar />
       <GlowingNetworkGrid />
-      <div className="mb-2 mt-24 flex flex-col gap-5">
+      <div className="relative z-10 mb-2 flex flex-col gap-10">
         <MainWrapper />
         <Footer />
       </div>

@@ -1,53 +1,58 @@
-import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import projects from "../data/project_data.json";
-import Carousel from "./Carousel";
-import { motion } from "motion/react";
-
-type Project = {
-  name: string;
-  description: string;
-  image: string[];
-};
+import { motion } from "framer-motion";
+import { HiExternalLink } from "react-icons/hi";
 
 const ProjectSection = () => {
-  const [open, setOpen] = useState(false);
-  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+  const navigate = useNavigate();
 
   return (
-    <>
-      <div className="flex flex-col gap-16">
-        <div className="flex items-center justify-start gap-2">
-          <span className="text-2xl text-secondary">Projects</span>
-        </div>
-        <div className="flex flex-col gap-10">
-          {projects.map((project, index) => {
-            return (
-              <div key={index} className="flex justify-between gap-10">
-                <div>
-                  <div className="text-xl font-medium">{project.name}</div>
-                  <div className="text-base font-normal text-secondary">
-                    {project.description}
-                  </div>
-                </div>
-                <div className="flex-shrink-0">
-                  <motion.img
-                    src={`${Array.isArray(project.image) ? project.image?.[0] : project.image}`}
-                    alt={project.name}
-                    className="h-auto w-56 cursor-pointer rounded-lg border-2 border-gray-600 object-cover shadow-md"
-                    onClick={() => {
-                      setOpen(true);
-                      setSelectedProject(project);
-                    }}
-                    whileHover={{ scale: 1.1, rotate: 2 }}
-                  />
-                </div>
-              </div>
-            );
-          })}
-        </div>
+    <div className="flex flex-col gap-10">
+      {/* Section Title */}
+      <div className="text-3xl font-semibold text-white">Projects</div>
+
+      {/* Grid Layout */}
+      <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
+        {projects.map((project, index) => (
+          <motion.div
+            key={index}
+            className="group relative cursor-pointer rounded-lg bg-[#1e1e1e] p-6 shadow-lg transition-all duration-300 ease-in-out hover:bg-[#130f0b] hover:bg-opacity-80"
+            whileHover={{ scale: 1.05 }}
+            onClick={() =>
+              navigate(
+                `/portfolio/${project.name.toLowerCase().replace(/\s+/g, "-")}`,
+              )
+            }
+          >
+            {/* Project Name */}
+            <div className="text-xl font-semibold text-white">
+              {project.name}
+            </div>
+
+            <div>
+              <HiExternalLink className="absolute right-4 top-4 text-gray-400 transition-all duration-300 group-hover:-translate-y-1 group-hover:translate-x-1" />
+            </div>
+
+            {/* Project Description */}
+            <p className="mt-2 text-base text-gray-400">
+              {project.description}
+            </p>
+
+            {/* Technologies Used */}
+            <div className="mt-4 flex flex-wrap gap-2">
+              {project.technologies.map((tech, idx) => (
+                <span
+                  key={idx}
+                  className="rounded-full bg-gray-800 px-3 py-1 text-sm text-gray-300 transition-all duration-300 ease-in-out hover:bg-gray-200 hover:text-gray-700"
+                >
+                  {tech}
+                </span>
+              ))}
+            </div>
+          </motion.div>
+        ))}
       </div>
-      {open && <Carousel project={selectedProject} setOpen={setOpen} />}
-    </>
+    </div>
   );
 };
 

@@ -5,17 +5,17 @@ import SkillSection from "./SkillSection";
 
 const MainWrapper = () => {
   return (
-    <div className="grid grid-cols-4 gap-4">
-      <div className="card-wrapper animated-border col-span-full">
+    <div className="flex flex-col gap-8">
+      <div className="relative">
         <HeroSection />
       </div>
-      <div className="card-wrapper col-span-full">
+      <div className="card-wrapper">
         <ProjectSection />
       </div>
-      <div className="card-wrapper col-span-full">
+      <div className="card-wrapper animated-fade-in">
         <ExperienceSection />
       </div>
-      <div className="col-span-full">
+      <div className="card-wrapper">
         <SkillSection />
       </div>
     </div>

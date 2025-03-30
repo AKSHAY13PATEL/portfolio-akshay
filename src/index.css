@@ -35,76 +35,27 @@ body {
     background-color: #f9f9f9;
   }
 }
-
 .card-wrapper {
-  @apply h-auto w-full rounded-xl border-2 border-solid border-darkgray bg-background-default px-10 py-14;
+  @apply relative h-auto w-full overflow-hidden px-10 py-14 transition-all duration-300;
+
+  /* Subtle section separation */
+  background: linear-gradient(135deg, rgba(20, 20, 20, 1), rgba(10, 10, 10, 1));
 }
 
-.card-wrapper-footer {
-  @apply px-4 py-5;
-}
-
-.card-wrapper-skill {
-  @apply text-2xl font-medium text-secondary;
-}
-
-@keyframes borderAnimation {
-  0% {
-    background-position: 0% 50%;
+/* Smooth Fade-in Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
   }
-  100% {
-    background-position: 100% 50%;
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-.animated-border {
-  position: relative;
-  /* overflow: hidden;  */
-}
-
-.animated-border::before {
-  content: "";
-  position: absolute;
-  top: -2.5px;
-  left: -2.5px;
-  right: -2.5px;
-  bottom: -2.5px;
-  border-radius: inherit;
-  z-index: -1;
-  background: linear-gradient(90deg, #801a00, #262626, #801a00, #262626);
-  background-size: 300% 300%;
-  animation: borderAnimation 5s linear infinite;
-}
-
-.card-flip {
-  @apply min-h-12 min-w-24 flex-1;
-  perspective: 1000px;
-}
-
-.card-flip-inner {
-  @apply relative h-full w-full;
-  transform-style: preserve-3d;
-  transition: transform 0.6s;
-}
-
-.card-flip-inner:hover {
-  transform: rotateY(180deg);
-}
-
-.card-front,
-.card-back {
-  @apply absolute flex h-full w-full items-center justify-center rounded-md border border-solid border-[rgb(115,31,0)] text-lg;
-  backface-visibility: hidden;
-  -webkit-backface-visibility: hidden;
-}
-
-.card-front {
-  @apply bg-black text-white;
-}
-
-.card-back {
-  @apply bg-black text-white;
-  transform: rotateY(180deg);
+.animated-fade-in {
+  animation: fadeIn 0.5s ease-out;
 }
 
 @keyframes slideIn {

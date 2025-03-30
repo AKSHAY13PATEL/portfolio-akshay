@@ -12,12 +12,22 @@
       "/next-docs/next_docs_7.png",
       "/next-docs/next_docs_8.png",
       "/next-docs/next_docs_9.png"
+    ],
+    "technologies": [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Prisma",
+      "MongoDB",
+      "Liveblocks",
+      "TipTap"
     ]
   },
   {
     "name": "Rawg Clone",
     "description": "Created as a front-end learning exercise, this clone mirrors the popular gaming information site RAWG. Built with React, TypeScript, Prisma, and MongoDB, it fetches game data from the RAWG API—the ultimate video game database. Explore games, discover details, and much more!",
-    "image": ["/raw-game/rawg_clone_1.png", "/raw-game/rawg_clone_2.png"]
+    "image": ["/raw-game/rawg_clone_1.png", "/raw-game/rawg_clone_2.png"],
+    "technologies": ["React", "TypeScript", "Chakra UI"]
   },
   {
     "name": "Issue Tracker Application",
@@ -25,7 +35,8 @@
     "image": [
       "/issue-tracker-app/issue_tracker_app_1.png",
       "/issue-tracker-app/issue_tracker_app_2.png"
-    ]
+    ],
+    "technologies": ["Next.js", "TypeScript"]
   },
   {
     "name": "Cloudify Data",
@@ -33,6 +44,7 @@
     "image": [
       "/cloudify-data/cloudify_data_1.png",
       "/cloudify-data/cloudify_data_2.png"
-    ]
+    ],
+    "technologies": ["HTML5", "CSS3", "JavaScript"]
   }
 ]
