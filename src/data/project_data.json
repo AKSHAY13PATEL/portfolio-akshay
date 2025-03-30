@@ -1,5 +1,6 @@
 [
   {
+    "id": "next-docs",
     "name": "Next Docs",
     "description": "Built a high-performance, real-time collaborative editor using TipTap and Liveblocks, facilitating seamless multi-user document editing.",
     "image": [
@@ -21,30 +22,52 @@
       "MongoDB",
       "Liveblocks",
       "TipTap"
+    ],
+    "liveDemo": "https://next-docs.example.com",
+    "github": "https://github.com/yourusername/next-docs",
+    "challenges": "Handling real-time document collaboration and resolving conflicts when multiple users edit the same document.",
+    "features": [
+      "Real-time collaborative editing",
+      "Optimistic UI updates",
+      "Role-based permissions",
+      "Autosave functionality",
+      "Dark mode support"
     ]
   },
   {
+    "id": "rawg-clone",
     "name": "Rawg Clone",
     "description": "Created as a front-end learning exercise, this clone mirrors the popular gaming information site RAWG. Built with React, TypeScript, Prisma, and MongoDB, it fetches game data from the RAWG API—the ultimate video game database. Explore games, discover details, and much more!",
     "image": ["/raw-game/rawg_clone_1.png", "/raw-game/rawg_clone_2.png"],
-    "technologies": ["React", "TypeScript", "Chakra UI"]
+    "technologies": ["React", "TypeScript", "Chakra UI"],
+    "liveDemo": "https://rawg-clone.example.com",
+    "github": "https://github.com/yourusername/rawg-clone",
+    "challenges": "Integrating RAWG API efficiently and optimizing the UI for game discovery."
   },
   {
+    "id": "issue-tracker-app",
     "name": "Issue Tracker Application",
     "description": "Developed using Next.js, Prisma, and NextAuth, this platform streamlines issue management. Assign tasks to users, analyze issue status, and collaborate seamlessly. MongoDB ensures robust data storage.",
     "image": [
       "/issue-tracker-app/issue_tracker_app_1.png",
       "/issue-tracker-app/issue_tracker_app_2.png"
     ],
-    "technologies": ["Next.js", "TypeScript"]
+    "technologies": ["Next.js", "TypeScript"],
+    "liveDemo": "https://issue-tracker.example.com",
+    "github": "https://github.com/yourusername/issue-tracker-app",
+    "challenges": "Implementing secure authentication and designing a user-friendly issue management workflow."
   },
   {
+    "id": "cloudify-data",
     "name": "Cloudify Data",
     "description": "Cloudify Data is a responsive website built as a hands-on project to practice HTML, CSS, and responsive design techniques. The focus was on crafting layouts, ensuring mobile-friendly designs, and applying modern styling practices. A great example of learning through practical implementation!",
     "image": [
       "/cloudify-data/cloudify_data_1.png",
       "/cloudify-data/cloudify_data_2.png"
     ],
-    "technologies": ["HTML5", "CSS3", "JavaScript"]
+    "technologies": ["HTML5", "CSS3", "JavaScript"],
+    "liveDemo": "https://cloudify-data.example.com",
+    "github": "https://github.com/yourusername/cloudify-data",
+    "challenges": "Ensuring fully responsive design across all devices and optimizing CSS for maintainability."
   }
 ]

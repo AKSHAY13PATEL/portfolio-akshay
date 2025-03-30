@@ -100,20 +100,20 @@ const ContactPage = () => {
           <a
             href="https://github.com/AKSHAY13PATEL"
             target="_blank"
-            className="flex items-center gap-2 text-white transition-all duration-300 hover:scale-110 hover:text-orange-500"
+            className="flex items-center gap-2 text-white transition-all duration-300 hover:scale-110 hover:text-orange-400"
           >
             GitHub <TiSocialGithubCircular className="size-7" />
           </a>
           <a
             href="https://www.linkedin.com/in/akshay-patel-917888135/"
             target="_blank"
-            className="flex items-center gap-2 text-white transition-all duration-300 hover:scale-110 hover:text-orange-500"
+            className="flex items-center gap-2 text-white transition-all duration-300 hover:scale-110 hover:text-blue-400"
           >
             LinkedIn <TiSocialLinkedinCircular className="size-7" />
           </a>
           <a
             href="mailto:akshaypatel.ap1320@gmail.com"
-            className="flex items-center gap-2 text-white transition-all duration-300 hover:scale-110 hover:text-orange-500"
+            className="flex items-center gap-2 text-white transition-all duration-300 hover:scale-110 hover:text-green-400"
           >
             Email <MdMail className="size-7" />
           </a>
