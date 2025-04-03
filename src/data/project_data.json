@@ -23,7 +23,7 @@
       "Liveblocks",
       "TipTap"
     ],
-    "liveDemo": "https://next-docs.example.com",
+    "liveDemo": "https://next-docs-lime.vercel.app/",
     "github": "https://github.com/yourusername/next-docs",
     "challenges": "Handling real-time document collaboration and resolving conflicts when multiple users edit the same document.",
     "features": [
@@ -40,7 +40,7 @@
     "description": "Created as a front-end learning exercise, this clone mirrors the popular gaming information site RAWG. Built with React, TypeScript, Prisma, and MongoDB, it fetches game data from the RAWG API—the ultimate video game database. Explore games, discover details, and much more!",
     "image": ["/raw-game/rawg_clone_1.png", "/raw-game/rawg_clone_2.png"],
     "technologies": ["React", "TypeScript", "Chakra UI"],
-    "liveDemo": "https://rawg-clone.example.com",
+    "liveDemo": "https://raw-game-clone.vercel.app/",
     "github": "https://github.com/yourusername/rawg-clone",
     "challenges": "Integrating RAWG API efficiently and optimizing the UI for game discovery."
   },
@@ -66,7 +66,7 @@
       "/cloudify-data/cloudify_data_2.png"
     ],
     "technologies": ["HTML5", "CSS3", "JavaScript"],
-    "liveDemo": "https://cloudify-data.example.com",
+    "liveDemo": "https://cloudify-data.vercel.app/",
     "github": "https://github.com/yourusername/cloudify-data",
     "challenges": "Ensuring fully responsive design across all devices and optimizing CSS for maintainability."
   }

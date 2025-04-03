@@ -23,24 +23,24 @@ const HeroSection = () => {
         {/* Left Column - Intro */}
         <div className="flex flex-col items-start">
           {/* Subheading */}
-          <motion.span
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="text-lg font-medium uppercase tracking-widest text-gray-400"
-          >
-            Frontend Developer
-          </motion.span>
-
-          {/* Name & Headline */}
           <motion.h1
-            initial={{ opacity: 0, x: -30 }}
-            animate={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: -30 }}
+            animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
             className="mt-3 text-5xl font-bold leading-tight md:text-6xl"
           >
             Hey, I'm <span className="text-[#E63E21]">Akshay Patel</span>
           </motion.h1>
+
+          {/* Name & Headline */}
+          <motion.span
+            initial={{ opacity: 0, x: -20 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            className="mt-4 text-lg font-medium uppercase tracking-widest text-gray-400"
+          >
+            Frontend Developer
+          </motion.span>
 
           {/* Tagline */}
           <motion.p

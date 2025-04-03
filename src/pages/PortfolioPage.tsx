@@ -96,7 +96,7 @@ const Portfolio = () => {
         </div>
 
         {/* Contact Section */}
-        <div className="mt-16 text-center">
+        <div className="mb-16 mt-16 text-center">
           <h2 className="text-2xl font-semibold text-white">Let's Connect!</h2>
           <p className="mt-2 text-gray-400">
             Have a project in mind? Reach out and let's build something amazing.
