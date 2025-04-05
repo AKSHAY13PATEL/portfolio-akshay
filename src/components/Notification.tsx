@@ -13,7 +13,7 @@ const Notification = ({ text = "", description = "", onClose = () => {} }) => {
   }, []);
 
   return (
-    <div className="animated-slide-in fixed right-4 top-4 z-20 min-w-[350px] max-w-[350px] rounded-lg border border-slate-200 bg-slate-100 px-4 py-2 shadow-lg">
+    <div className="animated-slide-in fixed right-4 top-24 z-20 min-w-[350px] max-w-[350px] rounded-lg border border-slate-200 bg-slate-100 px-4 py-2 shadow-lg">
       <div className="flex justify-between gap-6">
         <div className="flex max-w-[88%] flex-col justify-start gap-1">
           <div className="text-md truncate font-semibold text-slate-800">

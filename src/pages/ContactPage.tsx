@@ -29,13 +29,33 @@ const ContactPage = () => {
     try {
       setIsSubmitting(true);
 
-      // TODO : Implement the form submission logic here
+      const apiUrl =
+        import.meta.env.VITE_BACKEND_URL || "http://127.0.0.1:3001";
+
+      const response = await fetch(`${apiUrl}/submit`, {
+        method: "POST",
+        body: JSON.stringify(formData),
+        headers: {
+          "content-type": "application/json",
+        },
+      });
+
+      const data = await response.json();
+
+      if (!response.ok) {
+        throw new Error(
+          data.error || "Something went wrong while submitting the form!",
+        );
+      }
+
       setShowNotification(true);
-      setNotificationText("Functionality is not implemented yet!");
-    } catch (error) {
+      setNotificationText(data.message || "Form submitted successfully!");
+    } catch (error: string | any) {
+      if (error instanceof Error) {
+        setShowNotification(true);
+        setNotificationText(error.message || "Error Submitting Form!");
+      }
       console.error("Error Submitting Form", error);
-      setShowNotification(true);
-      setNotificationText("Error Submitting Form!");
     } finally {
       setIsSubmitting(false);
     }
