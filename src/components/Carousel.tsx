@@ -11,10 +11,11 @@ type Project = {
 interface CarouselProps {
   project: Project | null;
   setOpen: (open: boolean) => void;
+  defaultIndex: number;
 }
 
-const Carousel = ({ project, setOpen }: CarouselProps) => {
-  const [index, setIndex] = useState(0);
+const Carousel = ({ project, setOpen, defaultIndex = 0 }: CarouselProps) => {
+  const [index, setIndex] = useState(defaultIndex);
   const [direction, setDirection] = useState(0);
 
   useEffect(() => {

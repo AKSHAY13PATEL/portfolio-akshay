@@ -24,7 +24,7 @@ const Portfolio = () => {
             {projects.slice(0, 3).map((project) => (
               <div
                 key={project.id}
-                className="rounded-lg bg-gray-800 p-4 shadow-lg transition hover:scale-105"
+                className="rounded-lg bg-background-lightblack p-4 shadow-lg transition hover:scale-105"
               >
                 <img
                   src={project.image[0]}
@@ -77,7 +77,7 @@ const Portfolio = () => {
               <Link
                 to={`/portfolio/${project.id}`}
                 key={project.id}
-                className="rounded-lg bg-gray-800 p-4 shadow-lg transition hover:scale-105"
+                className="rounded-lg bg-background-lightblack p-4 shadow-lg transition hover:scale-105"
               >
                 <img
                   src={project.image[0]}

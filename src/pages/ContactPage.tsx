@@ -64,7 +64,7 @@ const ContactPage = () => {
   return (
     <div className="mx-auto flex flex-col gap-5 px-0">
       <Navbar />
-      <div className="card-wrapper mb-2 mt-24 flex flex-col items-center gap-5">
+      <div className="mb-2 mt-24 flex flex-col items-center gap-5">
         {/* Hero Section */}
         <h1 className="mb-2 text-center text-4xl font-bold text-white">
           Let's Build Something Amazing Together!

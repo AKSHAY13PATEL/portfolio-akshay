@@ -2,8 +2,12 @@ import { useParams } from "react-router-dom";
 import projects from "../data/project_data.json";
 import { FaExternalLinkAlt, FaGithub } from "react-icons/fa";
 import Navbar from "../components/Navbar";
+import Carousel from "../components/Carousel";
+import { useState } from "react";
 
 const PortfolioDetail = () => {
+  const [isOpen, setIsOpen] = useState(false);
+  const [defaultIndex, setDefaultIndex] = useState(0);
   const params = useParams();
   const id = params.id;
 
@@ -78,14 +82,29 @@ const PortfolioDetail = () => {
             Project Screenshots
           </h2>
           <div className="mt-4 grid grid-cols-1 gap-4 md:grid-cols-2">
-            {project.image.map((screenshot, index) => (
-              <img
-                key={index}
-                src={screenshot}
-                alt={`Screenshot ${index + 1}`}
-                className="rounded-lg shadow-lg transition hover:scale-105"
+            {isOpen && (
+              <Carousel
+                project={project}
+                setOpen={setIsOpen}
+                defaultIndex={defaultIndex}
               />
-            ))}
+            )}
+            {!isOpen && (
+              <>
+                {project.image.map((screenshot, index) => (
+                  <img
+                    key={index}
+                    src={screenshot}
+                    alt={`Screenshot ${index + 1}`}
+                    className="rounded-lg shadow-lg transition hover:scale-105"
+                    onClick={() => {
+                      setDefaultIndex(index);
+                      setIsOpen(true);
+                    }}
+                  />
+                ))}
+              </>
+            )}
           </div>
         </div>
 
