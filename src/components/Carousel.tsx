@@ -83,7 +83,7 @@ const Carousel = ({ project, setOpen, defaultIndex = 0 }: CarouselProps) => {
                 src={project.image[index]}
                 alt="Preview"
                 className="absolute h-full w-full rounded-lg object-contain shadow-lg"
-                variants={variants}
+                variants={variants as any}
                 custom={direction}
                 initial="enter"
                 animate="center"
