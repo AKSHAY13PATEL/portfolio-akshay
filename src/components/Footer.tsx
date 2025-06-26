@@ -7,12 +7,12 @@ import {
 
 const Footer = () => {
   return (
-    <div className="flex items-center justify-between gap-4 border-t border-gray-700 bg-[#121212] px-6 py-6 text-gray-400">
+    <div className="flex flex-col items-center gap-y-4 border-t border-gray-700 bg-[#121212] px-4 py-6 text-gray-400 sm:flex-row sm:items-center sm:justify-between sm:gap-y-0 sm:px-6">
       {/* Footer Title */}
-      <div className="text-lg font-semibold text-gray-300">Portfolio 2024</div>
+      <div className="text-lg font-semibold text-gray-300">Portfolio 2025</div>
 
       {/* Social Links */}
-      <div className="flex gap-4">
+      <div className="flex flex-col gap-2 sm:flex-row sm:gap-4">
         <a
           href="https://github.com/AKSHAY13PATEL"
           target="_blank"
@@ -39,7 +39,7 @@ const Footer = () => {
       </div>
 
       {/* Availability Status */}
-      <div className="mt-3 flex items-center gap-2 rounded-full border border-gray-600 px-4 py-1 text-sm text-gray-300">
+      <div className="mt-2 flex items-center gap-2 rounded-full border border-gray-600 px-4 py-1 text-sm text-gray-300 sm:mt-0">
         <FaCircle className="size-2 animate-pulse text-red-500" />
         <span className="tracking-wide">Available for Job</span>
       </div>

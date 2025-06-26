@@ -24,63 +24,76 @@ const Navbar = () => {
   }, [location.pathname]);
 
   return (
-    <header className="fixed left-0 top-0 z-40 w-full bg-background-default/80 shadow-lg backdrop-blur-md">
+    <header className="fixed left-0 top-0 z-40 w-full bg-background-default/70 shadow-xl backdrop-blur-lg">
       <div className="container mx-auto flex items-center justify-between px-6 py-4">
         {/* Logo & Branding */}
         <div
-          className="flex cursor-pointer items-center gap-3"
+          className="flex cursor-pointer items-center gap-3 transition-transform duration-300 hover:scale-105"
           onClick={() => navigate("/")}
         >
-          <img src={Logo} alt="Logo" className="h-10 w-10 object-contain" />
-          <span className="text-xl font-bold text-highlight">MyPortfolio</span>
+          <img
+            src={Logo}
+            alt="Logo"
+            className="h-10 w-10 rounded-full border-2 border-highlight bg-white/10 object-contain shadow-md transition-transform duration-300 hover:rotate-6"
+          />
+          <span className="text-xl font-extrabold text-[#E63E21] drop-shadow-lg">
+            MyPortfolio
+          </span>
         </div>
 
         {/* Desktop Navigation */}
-        <nav className="hidden gap-6 md:flex">
+        <nav className="hidden gap-8 md:flex">
           {tabItems.map((tab) => (
             <span
               key={tab.name}
-              className={`cursor-pointer transition ${
+              className={`relative cursor-pointer px-2 py-1 text-lg font-medium transition-colors duration-200 ${
                 activeTab === tab.name
-                  ? "border-b-2 border-highlight font-semibold text-highlight"
-                  : "text-primary hover:text-highlight/80"
-              }`}
+                  ? "text-[#E63E21]"
+                  : "text-primary hover:text-highlight/90"
+              } group`}
               onClick={() => navigate(tab.path)}
             >
               {tab.name}
+              {/* Underline animation */}
+              <span
+                className={`absolute -bottom-1 left-0 h-0.5 w-full rounded bg-[#E63E21] transition-all duration-300 ${activeTab === tab.name ? "scale-x-100 opacity-100" : "scale-x-0 opacity-0 group-hover:scale-x-100 group-hover:opacity-80"} `}
+              />
             </span>
           ))}
         </nav>
 
         {/* Mobile Menu Icon */}
         <button
-          className="text-primary focus:outline-none md:hidden"
+          className="text-highlight transition-transform duration-200 hover:scale-110 focus:outline-none md:hidden"
           onClick={() => setMenuOpen(!menuOpen)}
+          aria-label="Open menu"
         >
-          <FaBars size={24} />
+          <FaBars size={28} />
         </button>
       </div>
 
       {/* Mobile Navigation (Dropdown) */}
       {menuOpen && (
-        <nav className="flex flex-col bg-background-default py-4 shadow-md md:hidden">
-          {tabItems.map((tab) => (
-            <span
-              key={tab.name}
-              className={`cursor-pointer py-2 text-center transition ${
-                activeTab === tab.name
-                  ? "font-bold text-highlight"
-                  : "text-primary"
-              }`}
-              onClick={() => {
-                navigate(tab.path);
-                setMenuOpen(false);
-              }}
-            >
-              {tab.name}
-            </span>
-          ))}
-        </nav>
+        <div className="pointer-events-auto translate-y-0 opacity-100 transition-all duration-300 md:hidden">
+          <nav className="mx-4 mt-2 flex flex-col rounded-xl bg-background-default/90 py-4 shadow-2xl ring-1 ring-highlight/20 backdrop-blur-lg">
+            {tabItems.map((tab) => (
+              <span
+                key={tab.name}
+                className={`cursor-pointer py-3 text-center text-lg font-semibold transition-colors duration-200 ${
+                  activeTab === tab.name
+                    ? "text-[#E63E21]"
+                    : "text-primary hover:text-highlight/90"
+                } `}
+                onClick={() => {
+                  navigate(tab.path);
+                  setMenuOpen(false);
+                }}
+              >
+                {tab.name}
+              </span>
+            ))}
+          </nav>
+        </div>
       )}
     </header>
   );
